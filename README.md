@@ -16,9 +16,10 @@
 
 
 ## Prepare
-### clone this project
+### get deploytools
 ```
-git clone https://github.com/LINKIT-Group/aws-cicd-demo.git
+git clone https://github.com/LINKIT-Group/deploytools.git
+cd deploytools
 ```
 
 ### setup credentials for AWS
@@ -34,7 +35,7 @@ aws_secret_access_key = ${YOUR_SECRET_ACCESS_KEY}
 Note: at first run a Docker image will be build, this can take a few minutes. Subsequent runs are much faster.
 ### Pull-merge a GIT repository into ./build/buildrepo
 ```
-make git url=https://github.com/LINKIT-Group/aws-cicd-linkitqa
+make git url=https://github.com/LINKIT-Group/aws-cicd-demo
 ```
 ### Deploy infrastructure
 ```
