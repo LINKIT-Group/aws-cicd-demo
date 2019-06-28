@@ -7,6 +7,7 @@ resource "random_string" "name" {
   length = 5
   special = false
   lower = true
+  upper = false
 }
 
 resource "aws_codecommit_repository" "backend-repository" {
